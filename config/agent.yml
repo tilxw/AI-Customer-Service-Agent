@@ -1,0 +1,3 @@
+# Agent 业务配置：
+# external_data_path 指向外部报告数据 CSV 文件，供 fetch_external_data 工具读取。
+external_data_path: data/external/records.csv

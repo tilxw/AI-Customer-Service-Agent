@@ -1,0 +1,7 @@
+# 提示词路径配置：
+# main_prompt_path: 普通客服场景提示词；
+# rag_summarize_prompt_path: RAG 总结链路提示词；
+# report_prompt_path: 报告生成场景提示词（由中间件动态切换）。
+main_prompt_path : prompts/main_prompt.txt
+rag_summarize_prompt_path : prompts/rag_summarize.txt
+report_prompt_path : prompts/report_prompt.txt

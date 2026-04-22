@@ -1,0 +1,21 @@
+# 向量库基础配置：
+# collection_name: Chroma 集合名；
+# persist_directory: 向量库持久化目录；
+# k: 每次检索返回的文档片段数量。
+collection_name: agent
+persist_directory: chroma_db
+k: 3
+# data_path: 知识文件目录；
+# md5_hex_store: 已入库文件的 MD5 记录文件；
+# allow_knowledge_file_type: 允许入库的文件后缀。
+data_path: data
+md5_hex_store: md5.text
+allow_knowledge_file_type: ["txt", "pdf"]
+
+# 文本切片配置：
+# chunk_size 越大，单片上下文越完整但向量更粗；
+# chunk_overlap 用于保持相邻片段语义连续；
+# separators 按优先级决定切分边界。
+chunk_size: 200
+chunk_overlap: 20
+separators: ["\n\n", "\n", ".", "!", "?", "。", "！", "？", " ", ""]

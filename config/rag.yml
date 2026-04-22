@@ -1,0 +1,5 @@
+# RAG 模型配置：
+# chat_model_name 用于对话生成；
+# embedding_model_name 用于文本向量化（入库与检索都依赖它）。
+chat_model_name: qwen3-max
+embedding_model_name: text-embedding-v4
