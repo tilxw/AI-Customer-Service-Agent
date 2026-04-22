@@ -20,7 +20,7 @@ INPUT_BORDER_RADIUS = "12px"     # 输入框圆角
 
 
 def init_page_styles():
-    """初始化页面样式（在 app_aigaiban.py 最顶部调用一次）。
+    """初始化页面样式（在 app.py 最顶部调用一次）。
     
     作用：注入全局 CSS，美化所有消息气泡和输入栏。
     """

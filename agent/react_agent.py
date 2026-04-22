@@ -44,7 +44,7 @@ class ReactAgent():
         # 从而触发报告提示词切换。
         for chunk in self.agent.stream(input_dict, stream_mode="values", context={"report": False}):
             latest_message = chunk["messages"][-1]
-            if latest_message.content:
+            if latest_message.content and latest_message.type == "ai":
                 # 返回值语义：输出当前最新文本片段（清理首尾空白并补换行）。
                 yield latest_message.content.strip() + "\n"
 
