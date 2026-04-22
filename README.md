@@ -13,15 +13,15 @@
 
 **场景 1：普通客服问答**
 
-![img.png](img.png)
+<img src="assets/chat1.png" width="700"/>
 
 **场景 2：报告生成模式**
 
-![img_1.png](img_1.png)
+<img src="assets/chat2.png" width="700"/>
 
 **场景 3：工具调用过程**
 
-![img_2.png](img_2.png)
+<img src="assets/chat3.png" width="700"/>
 
 ## 项目结构
 
