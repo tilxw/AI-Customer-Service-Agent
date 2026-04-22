@@ -1,10 +1,14 @@
 from abc import ABC, abstractmethod
 from typing import Optional
+from dotenv import load_dotenv
 from langchain_community.chat_models.tongyi import BaseChatModel
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_core.embeddings import Embeddings
 from langchain_community.chat_models.tongyi import ChatTongyi
 from utils.config_handler import rag_conf
+
+# 加载 .env 文件中的环境变量
+load_dotenv()
 
 
 class BaseModelFactory(ABC):
